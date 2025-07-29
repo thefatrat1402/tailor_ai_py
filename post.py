@@ -1,7 +1,7 @@
 import requests
 import json
 
-def get_body_measurements(front_image_path, side_image_path, height_cm, server_url="http://127.0.0.1:8000/me/"):
+def get_body_measurements(front_image_path, side_image_path, height_cm, server_url="https://tailor-ai-py.onrender.com/me/"):
     try:
         files = {
             "front_image": open(front_image_path, "rb"),
